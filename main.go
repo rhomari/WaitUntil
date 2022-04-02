@@ -15,7 +15,7 @@ func main() {
 	go func() {
 		startTime, _ := time.Parse(time.RFC3339, "2022-04-02T11:55:00Z") //scheduling a task at the given date and time
 		time.Sleep(time.Until(startTime))
-		log.Println("I'am  doing stuff widthout front-end user intervention")
+		log.Println("I'am  doing stuff without front-end user intervention")
 		wg.Done()
 		//you can add a new schedule here for the next time
 	}()
